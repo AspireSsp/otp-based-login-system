@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 300px;
+            border: 1px solid darkgray;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            /* text-align: center; */
+        }
+        .container h3{
+            color: darkslateblue;
+            justify-content: center;
+            text-align: center;
+        }
+        .radio {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .mobile {
+            margin-left: 66px;
+            /* display: flex; */
+            /* flex-direction: row; */
+        }
+        .sendotp{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        #sobtn{
+            background-color: rgb(43, 86, 165);
+            margin: 2px;
+            padding: 5px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Login Page</h3>
+            <form action="/login" method="POST">
+                <div class="mobile">
+                    <p>Enter Your Phone NO :</p>
+                    <input type="text" name="phoneNo">
+                </div>
+                <div class="radio">
+                    <input type="checkbox" class="radio" id="privecyp" name="check1">
+                    <p>I have read and accept the privecy policy and agree that my personal data will be proccessed by you</p>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" class="radio" id="terms" name="check2" >
+                    <p>I have read and accept the terms of use</p>
+                </div>
+                <div class="sendotp">
+                    <button id="sobtn">Send OTP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

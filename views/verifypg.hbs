@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 300px;
+            border: 1px solid darkgray;
+            padding: 10px;
+            border-radius: 10px;
+            /* display: flex; */
+            margin: auto;
+            justify-content: center;
+            /* text-align: center; */
+        }
+        .info{
+            text-align: center;
+        }
+        #otp{
+            margin: 10px;
+            text-align: center;
+        }
+        .input{
+            border: solid .2px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+        #verify{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            
+        }
+        .btn{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: rgb(114, 202, 74);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h2>OTP Varification Page</h2> 
+            <p>OTP has  sent on the number {{phoneNo}} </p>
+        </div>
+        <form action="/verify" method="POST">
+            <div id="otp">
+                <p>Enter Your OTP</p>
+                <input class="input" id="input" type="text" name="otp">
+            </div>
+            <div id="verify">
+                <button class="btn" id="btn">Verify OTP</button>
+            </div>
+            <div class="rsotp">
+                <a href="http://">Resend OTP</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

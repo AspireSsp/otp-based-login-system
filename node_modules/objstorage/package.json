@@ -1,0 +1,36 @@
+{
+  "name": "objstorage",
+  "version": "1.0.0",
+  "description": "sessionStorage/localStorage API but backed by an object",
+  "main": "index.js",
+  "scripts": {
+    "100%": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test": "mocha test.js",
+    "watch": "mocha --watch test.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigpipe/objstorage.git"
+  },
+  "keywords": [
+    "object",
+    "obj",
+    "storage",
+    "objstorage",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigpipe/objstorage/issues"
+  },
+  "homepage": "https://github.com/bigpipe/objstorage#readme",
+  "devDependencies": {
+    "assume": "^2.0.1",
+    "mocha": "^5.1.1",
+    "istanbul": "^0.4.5"
+  }
+}
